@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/ReadMsm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/readSMS"/>
+        <Button
+            android:id="@+id/ReadContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="读取联系人"/>
+        <Button
+            android:id="@+id/Read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="写入联系人"/>
+    </LinearLayout>
+</LinearLayout>

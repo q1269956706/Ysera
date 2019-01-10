@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--背景图-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/login" />
+    <!--头部-->
+    <RelativeLayout
+        android:id="@+id/header_login"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+    </RelativeLayout>
+    <!--注册用户名-->
+    <RelativeLayout
+        android:id="@+id/body_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/header_login">
+        <ImageView
+            android:id="@+id/body_user_login"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/group"/>
+        <EditText
+            android:id="@+id/User_Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_name"
+            android:gravity="center"
+            android:maxLines="11"
+            android:inputType="number"/>
+    </RelativeLayout>
+    <!--注册用户密码-->
+    <RelativeLayout
+        android:id="@+id/body_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body_login"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/pwd"
+            />
+        <EditText
+            android:id="@+id/Password_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:maxLines="23"
+            android:gravity="center"
+            android:inputType="textPassword"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Login_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/body_login"
+        android:layout_marginBottom="217dp"
+        android:background="@null"
+        android:text="@string/Reg_button" />
+
+    <Button
+        android:id="@+id/Reg_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/body_login"
+        android:layout_alignTop="@+id/Login_Button"
+        android:background="@null"
+        android:text="@string/WeChat_login" />
+</RelativeLayout>

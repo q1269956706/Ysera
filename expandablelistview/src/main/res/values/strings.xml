@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ExpandableListView</string>
+    <string name="readSMS">读取短信内容</string>
+</resources>

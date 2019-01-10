@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2d2d2"
+    android:orientation="vertical">
+    <!--我的-header界面-->
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:src="@mipmap/userimg" />
+
+        <TextView
+            android:id="@+id/WeChat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgUser"
+            android:layout_toEndOf="@+id/imgUser"
+            android:text="@string/WeChat_name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/we"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgUser"
+            android:layout_toEndOf="@+id/imgUser"
+            android:text="@string/WeChat_User_Name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/WeChat_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgUser"
+            android:layout_toEndOf="@+id/we"
+            android:text=""
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <!--我的-body界面-钱包-->
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/money"
+                android:layout_marginRight="15dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/WeChat_money"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--我的-收藏-->
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/havenew"
+                android:layout_marginRight="15dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/HaveNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingTop="6dp"
+                    android:text="@string/WeChat_havenew" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/HaveNew"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d8dde1" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--我的相册-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/album"
+                android:layout_marginRight="15dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/Album.png"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/WeChat_Album" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/Album.png"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d8dde1" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--我的卡包-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/carbag"
+                android:layout_marginRight="15dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/CardBag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/WeChat_CardBag" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/CardBag"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d8dde1" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--我的-设置-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/setting"
+                android:layout_marginRight="15dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/Setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/WeChat_Setting" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/ex"
+                android:layout_marginRight="15dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/WeChat_Expression"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
